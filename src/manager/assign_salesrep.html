@@ -1,0 +1,112 @@
+<!--
+    File name: assign_salesrep.html
+    Functionality: interface for manager to assign new salesrep
+    Author: Qingyu WANG
+    Copyright [2020-05-26] by [Qingyu WANG] [Woolin Auto SMS]
+    All rights reserved.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <!--to accommodate different devices-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>manager</title>
+        <!--bootstrap-->
+		<link rel="stylesheet" type="text/css" href="../../published/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="../css/navigation.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <!--header-->
+            <header class="header">
+				<div class="header_container">
+					<div class="container">
+						<div class="row">
+							<div class="col">
+								<div class="header-content d-flex flex-row align-items-center justify-content-start">
+									<div class="logo"><a>Woolin Auto</a></div>
+									<nav class="my-nav">
+										<ul>
+											<li><a href="assign_salesrep.html">Assign new salesrep</a></li>
+                                            <li><a href="region.php">Modify region</a></li>
+                                            <li><a href="quota.php">Modify quota</a></li>
+                                            <li><a href="salesrep.html">Back</a></li>
+										</ul>
+									</nav>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+            
+            <br><br><br><br><br><br>
+            <div id="content">
+                <div class="row clearfix">
+                    <div class="col-md-12 column">
+                        <form role="form">
+                            <div class="form-group">
+                                <label for="username">Set Username</label>
+                                <input class="form-control" id="username" name="username" type="text">
+                                <div id="validation-username"></div>
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Set Password</label>
+                                <input class="form-control" id="password" name="password" type="password">
+                                <div id="validation-password"></div>
+                            </div>
+                            <div class="form-group">
+                                <label for="firstname">First Name</label>
+                                <input class="form-control" id="firstname" name="firstname" type="text">
+                                <div id="validation-firstname"></div>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastname">Last Name</label>
+                                <input class="form-control" id="lastname" name="lastname" type="text">
+                                <div id="validation-lastname"></div>
+                            </div>
+                            <div class="form-group">
+                                <label for="region">Region</label><br>
+                                <select class="form-control selectpicker" id="region" name="region">
+                                    <option value="China">China</option>
+                                    <option value="UK">the United Kingdom</option>
+                                    <option value="Thailand">Thailand</option>
+                                    <option value="Korea">Korea</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="tel">Telephone No</label>
+                                <input class="form-control" id="tel" name="tel" type="text">
+                                <div id="validation-tel"></div>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input class="form-control" id="email" name="email" type="text">
+                                <div id="validation-email"></div>
+                            </div>
+                            <div class="form-group">
+                                <label for="salesrep-quota">Set Quota</label>
+                                <input class="form-control" id="salesrep-quota" name="salesrep-quota" type="text">
+                                <div id="validation-quota"></div>
+                            </div><br>
+                            <div class="form-group">
+                                <div id="message-area"></div>
+                                <input class="button" id="assign-salesrep-botton" name="assign-salesrep-botton" type="button" value="Assign salesrep">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <!--jQuery & bootstrap-->
+        <script src="https://cdn.staticfile.org/jquery/3.4.0/jquery.min.js"></script>
+        <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <!--validation-->
+        <script src="../my_validation.js"></script>
+        <script src="assign_salesrep.js"></script>
+    </body>
+</html>
